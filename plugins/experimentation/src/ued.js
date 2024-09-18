@@ -10,17 +10,17 @@
  * governing permissions and limitations under the License.
  */
 
-var storage = window.sessionStorage;
+let storage = window.sessionStorage;
 
 function murmurhash3_32_gc(key, seed) {
-  var remainder = key.length & 3;
-  var bytes = key.length - remainder;
-  var c1 = 0xcc9e2d51;
-  var c2 = 0x1b873593;
-  var h1 = seed;
+  let remainder = key.length & 3;
+  let bytes = key.length - remainder;
+  let c1 = 0xcc9e2d51;
+  let c2 = 0x1b873593;
+  let h1 = seed;
   var k1;
   var h1b;
-  var i = 0;
+  let i = 0;
   while (i < bytes) {
       k1 =
           ((key.charCodeAt(i) & 0xff)) |
