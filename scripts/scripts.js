@@ -17,20 +17,11 @@ import {
   toClassName,
 } from './aem.js';
 
-// Define an execution context
-const pluginContext = {
-  getAllMetadata,
-  getMetadata,
-  loadCSS,
-  loadScript,
-  sampleRUM,
-  toCamelCase,
-  toClassName,
-};
+
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
-//for experimentation
+// for experimentation
 const AUDIENCES = {
   mobile: () => window.innerWidth < 600,
   desktop: () => window.innerWidth >= 600,
@@ -53,7 +44,16 @@ export function getAllMetadata(scope) {
     }, {});
 }
 
-
+// Define an execution context
+const pluginContext = {
+  getAllMetadata,
+  getMetadata,
+  loadCSS,
+  loadScript,
+  sampleRUM,
+  toCamelCase,
+  toClassName,
+};
 
 /**
  * Builds hero block and prepends to main in a new section.
