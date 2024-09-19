@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/pin/@adobe/aem-headless-client-js@v3.2.0-R5xKUKJyh8kNAfej66Zg/mode=imports,min/optimized/@adobe/aem-headless-client-js.js';
 
 import { createOptimizedPicture } from '../../scripts/aem.js';
