@@ -32,7 +32,7 @@ function validateEmail() {
     console.log(body);
   
     // change link to your email-form URL
-    fetch('/email-form', {
+    fetch('https://main--ensembledotcom--ajaniadobe.aem.live/email-form.json', {
       method: "POST",
       body,
     }).then((response) => {
